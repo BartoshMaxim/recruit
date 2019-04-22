@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Recruit Aforehand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+    </environment>
+    <link rel="stylesheet" href="~/css/stylesheet.css">
+    
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+<section class="first-screen">
+    <div class="container">
+        <div class="row">
+            <header class="col-md-4 col-sm-6 text-center">
+                <a href="#">
+                    <span class="brand-name">Работа студентам</span>
+                    <img src="/Images/logo.png">
+                    <span class="brand-surname">recruit.aforehand.com.ua</span>
+                </a>
+            </header>
+            <div class="col-md-8 col-sm-6 login-container text-right">
+                <div class="row">
+                    <div class="col-xs-12 loginLink-container">
+                        <a href="#" class="loginLink">Выйти</a>
+                    </div>
+                    <div class="col-xs-12 ubisoft-container">
+                        <a href="#" class="ubisoft">UbiSoft</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="sk-panel">
+                            <h2>Поиск по резюме</h2>
+                            <form action="">
+                                <input type="text" placeholder="кассир, менеджер ...">
+                                <select>
+                                    <option>Вся Украина</option>
+                                    <option>Киев</option>
+                                    <option>Харьков</option>
+                                    <option>Одесса</option>
+                                    <option>Львов</option>
+                                </select>
+                                <input type="submit" value="" placeholder="">
+                            </form>
+                            <a href="#" class="moreFunction">Расширенный поиск</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="nav-panel first-nav">
+                            <a class="nav-link">Создать вакансию</a>
+                            <a class="nav-link">Архив вакансий</a>
+                            <a class="nav-link">Разместить вакансию</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 second-nav">
+                        <div class="nav-panel">
+                            <a class="nav-link">Журнал событий</a>
+                            <a class="nav-link">Кабинет компании</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vacancyList">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice"></div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice"></div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice">5 000 грн.</div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice"></div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice"></div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice"></div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice"></div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+            <div class="col-xs-12 vacancyBlock">
+                <div class="vacancy-name">
+                    <span>Водій</span>
+                </div>
+                <div class="workerPrice">10 000 грн.</div>
+                <div class="workerInfo">
+                    <span class="workerName">Олексій Васильович Пасічник</span>
+                    <span class="glyphicon glyphicon-map-marker workerCity">Винница</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 paginationBox">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+                <a href="#">257</a>
+                <a href="#">Следующая &gt;</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h3>recruit.aforehand.com.ua</h3>
+                <a href="#">Услуги и сервисы</a>
+                <a href="#">Контакты</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="col-sm-4">
+                <h3>Работодателю</h3>
+                <a href="#">Добавить вакансию</a>
+                <a href="#">Поиск резюме</a>
+            </div>
+            <div class="col-sm-3">
+                <h3>Соискателю</h3>
+                <a href="#">Добавить резюме</a>
+                <a href="#">Найти работу</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</environment>
+<environment exclude="Development">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+    </script>
+</environment>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@RenderSection("Scripts", required: false)
+
+</body>
+</html>

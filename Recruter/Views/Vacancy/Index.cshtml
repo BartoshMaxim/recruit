@@ -1,0 +1,37 @@
+@model System.Collections.Generic.List<Recruter.Data.Vacancy>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>My Vacancies</h2>
+
+<table>
+    <thead>
+    <tr id="search">
+        <th>
+            Title
+        </th>
+        <th>
+            Salary
+        </th>
+        <th>
+            Location
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Salary</td>
+            <td>@item.Location</td>
+            <td>
+                (@Html.ActionLink("Edit", "Update", new { id = item.VacancyId }) |
+                @Html.ActionLink("Details", "Detail", new { id = item.VacancyId }))</td>
+        </tr>
+    }
+</table>

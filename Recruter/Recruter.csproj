@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <UserSecretsId>aspnet-Recruter-59F45F32-E3D6-4D20-A0F0-068414041C63</UserSecretsId>
+        <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.4" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Images\Users" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Vacancy\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Vacancy\Detail.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Vacancy\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Vacancy\Update.cshtml" />
+    </ItemGroup>
+
+</Project>

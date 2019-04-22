@@ -1,0 +1,43 @@
+@using Microsoft.AspNetCore.Identity
+@using Recruter.Data
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+
+    if (User.IsInRole(RecruterConstants.JobSeekerRole))
+    {
+        <li class="nav-item">
+            @Html.ActionLink("My Save Vacancies", "Index", "Vacancy", new {Class="nav-link text-dark"})
+        </li>
+    }
+    else if (User.IsInRole(RecruterConstants.RecruiterRole) || User.IsInRole(RecruterConstants.AdminRole))
+    {
+        <li class="nav-item">
+            @Html.ActionLink("My Vacancies", "Index", "Vacancy",null, new {Class="nav-link text-dark"})
+        </li>
+        <li class="nav-item">
+            @Html.ActionLink("Create Vacancy", "Create", "Vacancy", null,new {Class="nav-link text-dark"})
+        </li>
+    }
+    <li class="nav-item">
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name! <img class="logo" src="@UserManager.GetUserAsync(User).Result.Logo"/></a>
+    </li>
+    <li class="nav-item">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+}
+</ul>
